@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBox x:Name="txtBx_input"  VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="94,50,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="280" PreviewTextInput="NumberValidationTextBox"/>
+        <Label x:Name="lbl_input" Content="Input: " HorizontalAlignment="Left" Margin="42,49,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bttn_run" Content="Run" HorizontalAlignment="Left" Margin="216,251,0,0" VerticalAlignment="Top" Width="76" Click="bttn_run_Click"/>
+        <Button x:Name="bttn_close" Content="Close" HorizontalAlignment="Left" Margin="414,251,0,0" VerticalAlignment="Top" Width="75" Click="bttn_close_Click"/>
+        <Label x:Name="lbl_result" Content="Result: " HorizontalAlignment="Left" Margin="42,97,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtBlk_result" HorizontalAlignment="Left" Margin="94,102,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="280"/>
+        <Button x:Name="bttn_clear" Content="Clear" HorizontalAlignment="Left" Margin="314,251,0,0" VerticalAlignment="Top" Width="76" Click="bttn_clear_Click"/>
+        <ProgressBar x:Name="pBar_run"  HorizontalAlignment="Left" Height="10" Margin="54,291,0,0" VerticalAlignment="Top" Width="424" Maximum="100"/>
+
     </Grid>
 </Window>
